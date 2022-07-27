@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Frontend Mentor | Manage landing page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap");
+    </style>
+  </head>
+  <body>
+    <img id="patern1" src="/images/bg-tablet-pattern.svg" alt="pattern" />
+    <img id="patern2" src="/images/bg-tablet-pattern.svg" alt="pattern" />
+    <div id="hamburgerBlock">
+      <ul>
+        <li>Home</li>
+        <li>Pricing</li>
+        <li>Products</li>
+        <li>About Us</li>
+        <li>Careers</li>
+      </ul>
+    </div>
+    <div id="page">
+      <div id="navbar">
+        <img id="logo" src="images/logo.svg" alt="logo" />
+
+        <img
+          id="hamburger"
+          src="/images/icon-hamburger.svg"
+          onclick="start()"
+          alt="hamburger"
+        />
+        <img
+          id="close"
+          src="/images/icon-close.min.svg"
+          onclick="closer()"
+          alt=""
+        />
+      </div>
+
+      <img id="images" src="/images/illustration-intro.svg" alt="images" />
+      <div class="text">
+        <h1>Bring everyone together to build better products</h1>
+        <p>
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+      </div>
+      <button class="btn">Get Started</button>
+
+      <div class="text">
+        <h1 id="w">What's different about Manage?</h1>
+        <p>
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+      </div>
+      <div id="part">
+        <div class="title">
+          <div class="number">01</div>
+          <div class="writing">Track company-wide progress</div>
+        </div>
+        <p id="paragraph">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+      </div>
+      <div id="part">
+        <div class="title">
+          <div class="number">02</div>
+          <div class="writing">Track company-wide progress</div>
+        </div>
+        <p id="paragraph">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+      </div>
+      <div id="part">
+        <div class="title">
+          <div class="number">03</div>
+          <div class="writing">Track company-wide progress</div>
+        </div>
+        <p id="paragraph">
+          Manage makes it simple for software teams to plan day-to-day tasks
+          while keeping the larger team goals in view
+        </p>
+      </div>
+      <h1 id="secondtitle">What they've said</h1>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="images/avatar-richard.png" alt="person" width="110px" />
+              <h1>Richard</h1>
+              <p>
+                "We have been able to cancel so many other subsriptions since
+                using Manage system "
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="images/avatar-anisha.png" alt="person" width="110px" />
+              <h1>Anisha</h1>
+              <p>
+                "We have been able to cancel so many other subscrptions since
+                using Manag since "
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="images/avatar-shanai.png" alt="person" width="110px" />
+              <h1>Shanai</h1>
+              <p>
+                "We have been able to cancel so many other subscrptions since
+                using Manns since "
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img src="images/avatar-ali.png" alt="person" width="110px" />
+              <h1>Ali</h1>
+              <p>"We have beenWe have been able to cancel so many other "</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <button class="btn">Get Started</button>
+      <div class="square">
+        <h1>Simplify how your team works today</h1>
+        <img src="/images/bg-simplify-section-mobile.svg" alt="" />
+        <button class="bnt">Get Started</button>
+      </div>
+      <div id="footer">
+        <div id="inpt">
+          <input placeholder="Updates in your inbox..." type="text" />
+          <button>GO</button>
+        </div>
+        <div id="footerList">
+          <ul id="list3">
+            <li>Home</li>
+            <li>Pricing</li>
+            <li>Products</li>
+            <li>About Us</li>
+          </ul>
+          <ul id="list4">
+            <li>Careers</li>
+            <li>Community</li>
+            <li>Privacy Policy</li>
+          </ul>
+        </div>
+        <div id="socialNetwork">
+          <img
+            src="images/icon-facebook.svg"
+            alt=""
+            width="40px"
+            height="40px"
+          />
+          <img src="images/icon-youtube.svg" alt="" />
+          <img src="images/icon-twitter.svg" alt="" />
+          <img src="images/icon-pinterest.svg" alt="" />
+          <img src="images/icon-instagram.svg" alt="" />
+        </div>
+        <img id="logo2" width="200px" src="images/logo.svg" alt="" />
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          type: "bullets",
+        },
+        bulletActiveClass: "swiper-pagination-bullet-active",
+
+        // Navigation arrows
+
+        // And if we need scrollbar
+      });
+    </script>
+  </body>
+</html>
