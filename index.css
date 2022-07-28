@@ -1,8 +1,5 @@
 html,
 body {
-  position: relative;
-  overflow-x: hidden;
-  margin: 0;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 .overflowHidden {
@@ -43,14 +40,15 @@ body {
   display: none;
   position: fixed;
   background-color: white;
-  margin-left: 25px;
-  margin-right: 5px;
+  margin-left: 8%;
+  margin-right: 8%;
   width: 430px;
   height: 340px;
   text-align: center;
   top: 120px;
   z-index: 10;
-  border: #f3603c solid 1px;
+  border: #white solid 1px;
+  border-radius: 10px;
 }
 #hamburgerBlock ul {
   font-size: 25px;
@@ -61,6 +59,7 @@ body {
 }
 #hamburgerBlock li {
   margin: 20px;
+  cursor: pointer;
 }
 #close {
   display: none;
@@ -299,6 +298,9 @@ body {
   width: 100%;
   height: 210px;
 }
+#footerList li {
+  cursor: pointer;
+}
 #list3 {
   list-style-type: none;
   margin: 40px;
@@ -307,8 +309,8 @@ body {
   list-style-type: none;
   margin: 40px;
 }
+
 ul {
-  cursor: pointer;
   line-height: 40px;
 }
 #socialNetwork {
