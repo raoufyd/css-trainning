@@ -2,15 +2,19 @@ function start() {
   var x = document.getElementById("hamburgerBlock");
   var y = document.getElementById("hamburger");
   var z = document.getElementById("close");
-  var scrollBar = document.getElementsByClassName("scrollbar-hidden");
 
   if (x.style.display === "block") {
     x.style.display = "none";
+    document.body.classList.remove("overflowHidden");
+    document.body.classList.add("overflowScroll");
   } else {
-    x.style.filter = "drop-shadow(8px 400px 250px black)";
+    x.style.filter = "drop-shadow(8px 100px 250px black)";
     x.style.display = "block";
     y.style.display = "none";
     z.style.display = "block";
+
+    document.body.classList.remove("overflowScroll");
+    document.body.classList.add("overflowHidden");
   }
 }
 function closer() {
